@@ -1,0 +1,6 @@
+class BootyBayBodyguard(MinionCard):
+    def __init__(self):
+        super().__init__("Booty Bay Bodyguard", 5, CHARACTER_CLASS.ALL, CARD_RARITY.COMMON)
+
+    def create_minion(self, player):
+        return Minion(5, 4, taunt=True)
