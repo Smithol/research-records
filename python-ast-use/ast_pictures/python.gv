@@ -1,0 +1,216 @@
+digraph tree {
+	"0" [label="Node_name: Module
+body: ['ClassDef']
+", shape=box]
+	"1" [label="Node_name: ClassDef
+name: BootyBayBodyguard
+bases: ['Name']
+keywords: None
+body: ['FunctionDef', 'FunctionDef']
+decorator_list: None
+lineno: 1
+col_offset: 0
+", shape=box]
+	"2" [label="Node_name: Name
+id: MinionCard
+ctx: Load
+lineno: 1
+col_offset: 24
+", shape=box]
+	"3" [label="Node_name: FunctionDef
+name: __init__
+args: arguments
+body: ['Expr']
+decorator_list: None
+lineno: 2
+col_offset: 4
+", shape=box]
+	"4" [label="Node_name: FunctionDef
+name: create_minion
+args: arguments
+body: ['Return']
+decorator_list: None
+lineno: 5
+col_offset: 4
+", shape=box]
+	"35" [label="Node_name: Load
+", shape=box]
+	"16" [label="Node_name: arguments
+args: ['arg']
+kwonlyargs: None
+kw_defaults: None
+defaults: None
+", shape=box]
+	"17" [label="Node_name: Expr
+value: Call
+lineno: 3
+col_offset: 8
+", shape=box]
+	"5" [label="Node_name: arguments
+args: ['arg', 'arg']
+kwonlyargs: None
+kw_defaults: None
+defaults: None
+", shape=box]
+	"6" [label="Node_name: Return
+value: Call
+lineno: 6
+col_offset: 8
+", shape=box]
+	"34" [label="Node_name: arg
+arg: self
+lineno: 2
+col_offset: 17
+", shape=box]
+	"18" [label="Node_name: Call
+func: Attribute
+args: ['Str', 'Num', 'Attribute', 'Attribute']
+keywords: None
+lineno: 3
+col_offset: 8
+", shape=box]
+	"14" [label="Node_name: arg
+arg: self
+lineno: 5
+col_offset: 22
+", shape=box]
+	"15" [label="Node_name: arg
+arg: player
+lineno: 5
+col_offset: 28
+", shape=box]
+	"7" [label="Node_name: Call
+func: Name
+args: ['Num', 'Num']
+keywords: ['keyword']
+lineno: 6
+col_offset: 15
+", shape=box]
+	"19" [label="Node_name: Attribute
+value: Call
+attr: __init__
+ctx: Load
+lineno: 3
+col_offset: 8
+", shape=box]
+	"20" [label="Node_name: Str
+s: Booty Bay Bodyguard
+lineno: 3
+col_offset: 25
+", shape=box]
+	"21" [label="Node_name: Num
+lineno: 3
+col_offset: 48
+", shape=box]
+	"22" [label="Node_name: Attribute
+value: Name
+attr: ALL
+ctx: Load
+lineno: 3
+col_offset: 51
+", shape=box]
+	"23" [label="Node_name: Attribute
+value: Name
+attr: COMMON
+ctx: Load
+lineno: 3
+col_offset: 72
+", shape=box]
+	"8" [label="Node_name: Name
+id: Minion
+ctx: Load
+lineno: 6
+col_offset: 15
+", shape=box]
+	"9" [label="Node_name: Num
+lineno: 6
+col_offset: 22
+", shape=box]
+	"10" [label="Node_name: Num
+lineno: 6
+col_offset: 25
+", shape=box]
+	"11" [label="Node_name: keyword
+arg: taunt
+value: NameConstant
+", shape=box]
+	"30" [label="Node_name: Call
+func: Name
+args: None
+keywords: None
+lineno: 3
+col_offset: 8
+", shape=box]
+	"31" [label="Node_name: Load
+", shape=box]
+	"27" [label="Node_name: Name
+id: CHARACTER_CLASS
+ctx: Load
+lineno: 3
+col_offset: 51
+", shape=box]
+	"28" [label="Node_name: Load
+", shape=box]
+	"24" [label="Node_name: Name
+id: CARD_RARITY
+ctx: Load
+lineno: 3
+col_offset: 72
+", shape=box]
+	"25" [label="Node_name: Load
+", shape=box]
+	"13" [label="Node_name: Load
+", shape=box]
+	"12" [label="Node_name: NameConstant
+lineno: 6
+col_offset: 34
+", shape=box]
+	"32" [label="Node_name: Name
+id: super
+ctx: Load
+lineno: 3
+col_offset: 8
+", shape=box]
+	"29" [label="Node_name: Load
+", shape=box]
+	"26" [label="Node_name: Load
+", shape=box]
+	"33" [label="Node_name: Load
+", shape=box]
+
+	"0" -> "1"
+	"1" -> "2"
+	"1" -> "3"
+	"1" -> "4"
+	"2" -> "35"
+	"3" -> "16"
+	"3" -> "17"
+	"4" -> "5"
+	"4" -> "6"
+	"16" -> "34"
+	"17" -> "18"
+	"5" -> "14"
+	"5" -> "15"
+	"6" -> "7"
+	"18" -> "19"
+	"18" -> "20"
+	"18" -> "21"
+	"18" -> "22"
+	"18" -> "23"
+	"7" -> "8"
+	"7" -> "9"
+	"7" -> "10"
+	"7" -> "11"
+	"19" -> "30"
+	"19" -> "31"
+	"22" -> "27"
+	"22" -> "28"
+	"23" -> "24"
+	"23" -> "25"
+	"8" -> "13"
+	"11" -> "12"
+	"30" -> "32"
+	"27" -> "29"
+	"24" -> "26"
+	"32" -> "33"
+}
