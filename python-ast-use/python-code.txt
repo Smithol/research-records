@@ -4,3 +4,4 @@ class BootyBayBodyguard(MinionCard):
 
     def create_minion(self, player):
         return Minion(5, 4, taunt=True)
+        print('helo')
